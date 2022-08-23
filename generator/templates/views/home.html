@@ -1,5 +1,6 @@
 {% extends 'views/layout.html'%}
 {% block content %}
+<!--With action property we indicate route we want this form redirect-->
 <form action="{% url 'password' %}">
     <h1>Password Generator</h1>
     <label for="length"> Select lenght of your password</label>
@@ -12,7 +13,13 @@
         <option value="11">11 characters</option>
         <option value="12">12 characters</option>
         <option value="13">13 characters</option>
-        <option value="13">14 characters</option>
+        <option value="14">14 characters</option>
+        <option value="15">15 characters</option>
+        <option value="16">16 characters</option>
+        <option value="17">17 characters</option>
+        <option value="18">18 characters</option>
+        <option value="19">19 characters</option>
+        <option value="20">20 characters</option>
     </select>
     <label for="uppercase">uppercase</label>
     <input type="checkbox" name="uppercase" id="uppercase">

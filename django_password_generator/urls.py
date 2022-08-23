@@ -18,9 +18,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from generator import views
+from django.conf.urls.static import static
+from django.conf import settings
 urlpatterns = [
-    #Spath('admin/', admin.site.urls),
     path('', views.home),
-    path('abour', views.about),
+    path('about', views.about),
     path('password', views.password, name='password')
 ]
+if(settings.DEBUG):
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
