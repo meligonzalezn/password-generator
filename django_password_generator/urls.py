@@ -21,8 +21,8 @@ from generator import views
 from django.conf.urls.static import static
 from django.conf import settings
 urlpatterns = [
-    path('', views.home),
-    path('about', views.about),
+    path('', views.home, name='home'),
+    path('about', views.about,name='about'),
     path('password', views.password, name='password')
 ]
 if(settings.DEBUG):

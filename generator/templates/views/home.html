@@ -1,12 +1,13 @@
 {% extends 'views/layout.html'%}
 {% block content %}
 <!--With action property we indicate route we want this form redirect-->
-<div class="flex justify-center items-center absolute" style="top: 30%; left:38%">
-    <form class="flex" style="flex-direction: column; background-color: #121212; color: white; padding: 3rem;" action="{% url 'password' %}">
-        <h1 class="prose prose-xl" style="color: white;">Password Generator</h1>
+<div class="flex justify-center items-center absolute" style="top: 20%; left:38%">
+    <form class="flex" style="flex-direction: column; background-color: #121212; color: white; padding: 3rem; gap: 1rem; border-radius: 0.25rem;" action="{% url 'password' %}">
+        <h1 style="color: white; font-weight: 500; font-size: 2.6rem; line-height: 1.2; text-align: center;">Password <br> Generator</h1>
         <div class="flex text-center" style="flex-direction: column; max-width: 289px;">
-            <label for="length"> Select lenght of your password</label>
-            <select name="length" id="length">
+            <label for="length" style="font-size: 1rem; margin-bottom: 0.5rem;"> Select lenght of your password: </label>
+            <select style="border-radius: 0.25rem; color:#212529; padding: 0.375rem 0.75rem;   -webkit-appearance: none; -moz-appearance: none;   text-indent: 1px;
+            text-overflow: '';" name="length" id="length">
                 <option value="6">6 characters</option>
                 <option value="7">7 characters</option>
                 <option value="8">8 characters</option>
@@ -23,19 +24,19 @@
                 <option value="19">19 characters</option>
                 <option value="20">20 characters</option>
             </select>
-            <div>
+            <div class="flex" style="gap: 0.5rem; margin-top: 0.5rem; margin-bottom: 0.5rem;">
                 <input type="checkbox" name="uppercase" id="uppercase">
-                <label for="uppercase">uppercase</label>
+                <label for="uppercase">Uppercase</label>
             </div>
-            <div>
+            <div class="flex" style="gap: 0.5rem; margin-top: 0.5rem; margin-bottom: 0.5rem;">
                 <input type="checkbox" name="special" id="special">
                 <label for="special">Special characters</label>
             </div>
-            <div>
+            <div class="flex" style="gap: 0.5rem; margin-top: 0.5rem; margin-bottom: 0.5rem;">
                 <input type="checkbox" name="numbers" id="numbers">  
                 <label for="numbers">Numbers</label>
             </div>
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Generate password</button>
+            <button style="background-color: #0d6efd; border-color:#0d6efd; border-radius:0.25rem; padding: 0.375rem 0.75rem;">Generate password</button>
         </div>
     </form>
 </div>

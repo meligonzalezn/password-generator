@@ -1,0 +1,22 @@
+<nav style="color: white; padding-top: 0.8rem; padding-bottom: 0.8rem;">
+  <div class="flex" style="justify-content: space-between; align-items: center;">
+    <div>
+      <a href="{% url 'home'%}" class="flex" style="align-items: center; gap: 0.5rem;">
+        <button>
+          <image src="/static/images/logo.png" style="width: 35px; color: blue;"></image>
+        </button>
+        <h2>Password Generator</h2>
+      </a>
+    </div>
+    <div>
+      <ul class="flex" style="gap: 1rem;">
+        <li>
+          <a href="{% url 'home'%}" tabindex="1" >Home</a>
+        </li>
+        <li>  
+          <a href="{% url 'about' %}">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

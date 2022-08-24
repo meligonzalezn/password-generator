@@ -1,16 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Generator</title>
-</head>
-<body>
-    <p class="font-serif text-9xl">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem magni possimus at doloribus. Perferendis ipsam itaque fugiat quas quis quasi ex amet inventore quidem. Nesciunt debitis quam magnam voluptate deleniti!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, quo consequuntur dignissimos et, deleniti temporibus facere debitis, possimus sint fugit sunt dolorum. Voluptate placeat tempora a autem rem sint ducimus.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed voluptatem excepturi explicabo consequuntur quidem distinctio debitis enim doloremque, a voluptates alias iusto, eveniet rerum adipisci aliquid consectetur temporibus corrupti fugiat.
-    </p>
-</body>
-</html>
+{% extends 'views/layout.html' %}
+
+{% block content %}
+    <div style="color: white; margin-top: 12px;">
+        <h1 class="font-sans text-xl" style="font-weight: 500; margin-bottom: 10px;" >About</h1>
+        <p>
+            Make sure your password is strong and secure. A good password also consists of capital letters, special character such as #@&% and numbers. Also, it is 
+            important to mention that the longer the password, the safer. 
+            <br> <br>
+            Weak passwords are easily cracked. That is why you should try to create a strong password: 
+            <ul style="  list-style: circle; padding-left: 1rem;">
+                <li>
+                    Passwords should be long. 
+                </li>
+                <li>
+                    Passwords should contain at least 12 characters 
+                </li>
+                <li>
+                    Passwords should contain at least 1 uppercase letter
+                </li>
+                <li>
+                    Passwords should contain at least 1 lowercase letter
+                </li>
+                <li>
+                    Passwords should contain at least 1 numerical character
+                </li>
+                <li>
+                    Symbol characters are encouraged (e.g. @#$%^&!.)
+                </li>
+            </ul>
+            <br> 
+            With this application you can generate a safe password of maximum 20 characters with capital letters, special characters and
+            numbers.
+            <p> 
+                <b><u>Important:</u></b> This application was created with a Fazt Code video. You can find it here: 
+                <a target="_blank" style="color:#2262db; text-decoration:underline" href="https://www.youtube.com/watch?v=I0m92SBfDI8&t=3752s">Django web site</a>
+            </p> 
+            <br> 
+            <p>
+                Created with love ♡ by <a target="_blank" href="https://github.com/Meliwi">Meliwi</a>
+            </p>
+
+        </p>
+    </div>
+
+{% endblock %}
