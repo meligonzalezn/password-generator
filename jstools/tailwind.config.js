@@ -1,8 +1,5 @@
 module.exports = {
-  content: [
-    '../**/templates/*.html',
-    '../**/templates/**/*.html'
-  ],
+  content: ["../templates/**/*.{html,js}"],
   future: {
       removeDeprecatedGapUtilities: true,
       purgeLayersByDefault: true,
